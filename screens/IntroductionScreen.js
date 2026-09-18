@@ -22,7 +22,7 @@ export default function IntroductionScreen({ navigation }) {
           Why Choose Us? 🚀
         </Text>
 
-        <View className="mt-4 rounded-2xl bg-white p-5">
+        <View className="mt-4 rounded-2xl bg-cyan-100 p-5">
           <Text className="text-lg font-bold text-gray-900">
             ✅ Best Prices
           </Text>
@@ -31,7 +31,7 @@ export default function IntroductionScreen({ navigation }) {
           </Text>
         </View>
 
-        <View className="mt-4 rounded-2xl bg-white p-5">
+        <View className="mt-4 rounded-2xl bg-cyan-100 p-5">
           <Text className="text-lg font-bold text-gray-900">
             🚚 Fast Delivery
           </Text>
@@ -40,7 +40,7 @@ export default function IntroductionScreen({ navigation }) {
           </Text>
         </View>
 
-        <View className="mt-4 rounded-2xl bg-white p-5">
+        <View className="mt-4 rounded-2xl bg-cyan-100 p-5">
           <Text className="text-lg font-bold text-gray-900">
             🛡️ Warranty Included
           </Text>
@@ -48,6 +48,13 @@ export default function IntroductionScreen({ navigation }) {
             All laptops come with 1-year official warranty.
           </Text>
         </View>
+
+        <View className="mt-4 rounded-2xl bg-cyan-100 p-5">
+        <Text className="text-lg font-extrabold text-gray-500">Best Home Service</Text>
+        <Text>We provide 1 year home services!</Text>
+          
+        </View>
+        
       </View>
 
       {/* Call to Action */}
