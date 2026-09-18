@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { Text, View, ScrollView, Pressable } from 'react-native';
+import ProductsScreen from './ProductsScreen';
 
 export default function IntroductionScreen({ navigation }) {
   return (
@@ -59,7 +60,9 @@ export default function IntroductionScreen({ navigation }) {
 
       {/* Call to Action */}
       <View className="items-center pb-10">
-        <Pressable className="rounded-xl bg-black px-10 py-4">
+        <Pressable className="rounded-xl bg-black px-10 py-4"
+        onPress={() => navigation.navigate('Products')}>
+          
           <Text className="text-lg font-bold text-white">
             Get Started
           </Text>

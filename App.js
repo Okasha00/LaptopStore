@@ -4,6 +4,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import './global.css';
 
 import IntroductionScreen from './screens/IntroductionScreen';
+import ProductsScreen from './screens/ProductsScreen';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -16,6 +18,14 @@ export default function App() {
           component={IntroductionScreen}
           options={{ title: 'Laptop Store' }}
         />
+
+        <Stack.Screen
+  name="Products"
+  component={ProductsScreen}
+  options={{ title: 'Products' }}
+  />
+
+        
       </Stack.Navigator>
     </NavigationContainer>
   );
