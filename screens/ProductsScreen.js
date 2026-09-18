@@ -1,12 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
-import { Text, View, ScrollView, Pressable } from 'react-native';
+import { Text, View, ScrollView, Pressable, Image } from 'react-native';
+import DellImg from '../assets/products/Dell.png';
+import HPImg from '../assets/products/HP.png';
+import LenovoImg from '../assets/products/Lenovo.png';
+import AsusImg from '../assets/products/Asus.png';
+import MacBookImg from '../assets/products/MacBook.png';
 
 const laptops = [
-  { id: '1', name: 'Dell Inspiron 15', price: 699 },
-  { id: '2', name: 'HP Pavilion 14', price: 549 },
-  { id: '3', name: 'Lenovo ThinkPad E14', price: 799 },
-  { id: '4', name: 'ASUS VivoBook 15', price: 599 },
-  { id: '5', name: 'MacBook Air M2', price: 1099 },
+  { id: '1', name: 'Dell Inspiron 15', price: 699, image: DellImg },
+  { id: '2', name: 'HP Pavilion 14', price: 549, image: HPImg },
+  { id: '3', name: 'Lenovo ThinkPad E14', price: 799, image: LenovoImg },
+  { id: '4', name: 'ASUS VivoBook 15', price: 599, image: AsusImg },
+  { id: '5', name: 'MacBook Air M2', price: 1099, image: MacBookImg },
 ];
 
 export default function ProductsScreen({ navigation }) {
@@ -24,6 +29,12 @@ export default function ProductsScreen({ navigation }) {
       <View className="px-6 py-6">
         {laptops.map((item) => (
           <View key={item.id} className="mb-4 rounded-2xl bg-white p-5">
+            <Image
+              source={item.image}
+              className="mb-3 h-40 w-full rounded-xl"
+              resizeMode="contain"
+            />
+
             <Text className="text-xl font-bold text-gray-900">
               {item.name}
             </Text>
