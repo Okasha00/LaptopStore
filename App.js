@@ -5,6 +5,7 @@ import './global.css';
 
 import IntroductionScreen from './screens/IntroductionScreen';
 import ProductsScreen from './screens/ProductsScreen';
+import ReviewScreen from './screens/ReviewScreen';
 
 
 const Stack = createNativeStackNavigator();
@@ -23,8 +24,13 @@ export default function App() {
         name="Products"
         component={ProductsScreen}
         options={{ title: 'Products' }}
-  />
+        />
 
+        <Stack.Screen 
+        name='Review'
+        component={ReviewScreen}
+        options={{title:'Customer Reviews'}}
+        />
         
       </Stack.Navigator>
     </NavigationContainer>

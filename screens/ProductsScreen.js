@@ -5,6 +5,7 @@ import HPImg from '../assets/products/HP.png';
 import LenovoImg from '../assets/products/Lenovo.png';
 import AsusImg from '../assets/products/Asus.png';
 import MacBookImg from '../assets/products/MacBook.png';
+import ReviewScreen from './ReviewScreen';
 
 const laptops = [
   { id: '1', name: 'Dell Inspiron 15', price: 699, image: DellImg },
@@ -54,6 +55,16 @@ export default function ProductsScreen({ navigation }) {
         >
           <Text className="text-lg font-bold text-white">
             Go Back
+          </Text>
+        </Pressable>
+      </View>
+
+      <View className='items-center pb-9'>
+        <Pressable
+        className="rounded-2xl bg-black px-8 py-4"
+        onPress={() => navigation.navigate('Review')}>
+            <Text className="text-lg font-bold text-white">
+            Customer Reviews
           </Text>
         </Pressable>
       </View>

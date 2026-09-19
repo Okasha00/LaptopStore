@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { Text, View, ScrollView, Pressable } from 'react-native';
-import ProductsScreen from './ProductsScreen';
+
+
 
 export default function IntroductionScreen({ navigation }) {
   return (
