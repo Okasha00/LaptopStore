@@ -5,6 +5,7 @@ import HPImg from '../assets/products/HP.png';
 import LenovoImg from '../assets/products/Lenovo.png';
 import AsusImg from '../assets/products/Asus.png';
 import MacBookImg from '../assets/products/MacBook.png';
+import HPSImg from '../assets/products/HPS.png';
 import ReviewScreen from './ReviewScreen';
 
 const laptops = [
@@ -13,6 +14,7 @@ const laptops = [
   { id: '3', name: 'Lenovo ThinkPad E14', price: 799, image: LenovoImg },
   { id: '4', name: 'ASUS VivoBook 15', price: 599, image: AsusImg },
   { id: '5', name: 'MacBook Air M2', price: 1099, image: MacBookImg },
+  { id: '6', name: 'HP EliteBook 840', price: 798,image: HPSImg },
 ];
 
 export default function ProductsScreen({ navigation }) {
