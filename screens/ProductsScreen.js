@@ -23,6 +23,7 @@ export default function ProductsScreen({ navigation }) {
         <Text className="text-3xl font-bold text-black">
           Our Laptops 💻
         </Text>
+        <Text className="text-2xl font-normal text-blue-600">Here is the our amazing products</Text>
       </View>
 
       {/* Products List */}

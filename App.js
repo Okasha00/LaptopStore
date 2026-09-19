@@ -20,9 +20,9 @@ export default function App() {
         />
 
         <Stack.Screen
-  name="Products"
-  component={ProductsScreen}
-  options={{ title: 'Products' }}
+        name="Products"
+        component={ProductsScreen}
+        options={{ title: 'Products' }}
   />
 
         
